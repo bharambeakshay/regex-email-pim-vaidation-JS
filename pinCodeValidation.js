@@ -1,4 +1,6 @@
 //uc1 pincode validation for  6 digit number
+//uc2 pattern validates numbers only as input , 
+//it restricts special characters or alphabets
 let pincodeRegex = RegExp("[1-9]{1}[0-9]{5}");
 function PincodeValidation(pincode) {
     if (pincodeRegex.test(pincode) && pincode.length === 6) {
